@@ -44,7 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/ember-addon-test';
+    ENV.locationType = 'hash';
   }
 
   return ENV;

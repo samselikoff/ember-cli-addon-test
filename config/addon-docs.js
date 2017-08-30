@@ -10,9 +10,8 @@ module.exports = class extends AddonDocsConfig {
     before the new version is committed. See also the `deployDirectory()` hook.
   */
   get preservePaths() {
-    // return super.preservePaths;
     return [
-      'old'
+      'old/**'
     ];
   }
 
